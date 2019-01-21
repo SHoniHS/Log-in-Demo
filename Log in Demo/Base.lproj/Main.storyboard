@@ -32,8 +32,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLL-jd-oyC">
+                                <rect key="frame" x="161" y="198" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log out"/>
+                                <connections>
+                                    <action selector="logOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rfx-gz-MxT"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wo-Y2-7Up">
-                                <rect key="frame" x="166" y="104" width="42" height="30"/>
+                                <rect key="frame" x="119" y="104" width="136" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log in"/>
                                 <connections>
@@ -47,6 +55,7 @@
                     <connections>
                         <outlet property="label" destination="KMR-OB-AMO" id="U8O-JF-0rJ"/>
                         <outlet property="logInButtom" destination="2wo-Y2-7Up" id="eet-Y3-MuB"/>
+                        <outlet property="logOutButton" destination="tLL-jd-oyC" id="iTP-y2-TQd"/>
                         <outlet property="textField" destination="By7-zw-kyC" id="esa-lj-Mdg"/>
                     </connections>
                 </viewController>
